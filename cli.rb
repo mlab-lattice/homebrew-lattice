@@ -1,4 +1,4 @@
-class Lattice < Formula
+class Cli < Formula
   desc "The lattice command line tool"
   homepage "https://github.com/mlab-lattice/cli"
   url "https://s3-us-west-2.amazonaws.com/lattice-binaries/lattice"
