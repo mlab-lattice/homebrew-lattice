@@ -2,8 +2,8 @@ class Cli < Formula
   desc "The lattice command line tool"
   homepage "https://github.com/mlab-lattice/cli"
   url "https://s3-us-west-2.amazonaws.com/lattice-binaries/lattice"
-  sha256 "d01be58ff844de9e5af4a959c3c3962bacff9296202850a201fb924b609c4f2c"
-  version "0.1.2"
+  sha256 "13f87be25de6e5723cef9dba2b79c0a9815c610ff16dac01c0fff007caf1fb13"
+  version "0.1.3"
 
   bottle :unneeded
 
