@@ -5,10 +5,10 @@ image_resource:
   source:
     repository: alpine/git
 inputs:
-  - name: cli-homebrew-repo
+  - name: cli-homebrew-repo-ci
   - name: cli-metadata
 outputs:
   - name: updated-homebrew-repo
 run:
   path: ci/update-homebrew-formula.sh
-  dir: cli-homebrew-repo
+  dir: cli-homebrew-repo-ci
