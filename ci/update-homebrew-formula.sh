@@ -27,5 +27,8 @@ class Cli < Formula
 end
 EOF
 
+git add ./cli.rb
+git commit -m "Bump to v$BINARY_TAG"
+
 cp -a ./. ../updated-homebrew-repo
 
