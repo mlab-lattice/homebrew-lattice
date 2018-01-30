@@ -27,6 +27,8 @@ class Cli < Formula
 end
 EOF
 
+git config --local user.email concourse@mlab.com
+git config --local user.name concourse
 git add ./cli.rb
 git commit -m "Bump to v$BINARY_TAG"
 
