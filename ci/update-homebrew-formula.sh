@@ -14,14 +14,14 @@ cat > ./cli.rb << EOF
 class Cli < Formula
   desc 'The lattice command line tool'
   homepage 'https://github.com/mlab-lattice/cli'
-  url 'https://s3-us-west-2.amazonaws.com/lattice-binaries/"$DARWIN_BINARY_FILENAME"'
-  sha256 '"$DARWIN_BINARY_SHASUM"'
-  version '"$BINARY_TAG"'
+  url 'https://s3-us-west-2.amazonaws.com/lattice-binaries/$DARWIN_BINARY_FILENAME'
+  sha256 '$DARWIN_BINARY_SHASUM'
+  version '$BINARY_TAG'
 
   bottle :unneeded
 
   def install
-    prefix.install '"$DARWIN_BINARY_FILENAME"' 'lattice'
+    prefix.install '$DARWIN_BINARY_FILENAME' 'lattice'
     bin.install 'lattice'
   end
 end
