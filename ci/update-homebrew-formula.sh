@@ -4,8 +4,6 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-cp -a ../cli-homebrew-repo/. .
-
 BINARY_TAG=$(cat ../cli-metadata/tag)
 LINUX_BINARY_FILENAME=$(cat ../cli-metadata/linux_filename)
 DARWIN_BINARY_FILENAME=$(cat ../cli-metadata/darwin_filename)
@@ -28,3 +26,6 @@ class Cli < Formula
   end
 end
 EOF
+
+cp -a ./. ../updated-homebrew-repo
+
