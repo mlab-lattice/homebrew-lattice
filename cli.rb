@@ -8,7 +8,7 @@ class Cli < Formula
   bottle :unneeded
 
   def install
-    prefix.install 'lattice_darwin_amd64_v0.1.8' 'lattice'
+    mv 'lattice_darwin_amd64_v0.1.8' 'lattice'
     bin.install 'lattice'
   end
 end
