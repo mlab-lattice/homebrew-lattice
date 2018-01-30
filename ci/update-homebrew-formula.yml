@@ -11,4 +11,4 @@ outputs:
   - name: updated-homebrew-repo
 run:
   path: ci/update-homebrew-formula.sh
-  dir: cli-metadata
+  dir: cli-homebrew-repo
