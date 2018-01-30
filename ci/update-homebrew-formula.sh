@@ -19,7 +19,7 @@ class Cli < Formula
   bottle :unneeded
 
   def install
-    mv '$DARWIN_BINARY_FILENAME' 'lattice'
+    mv '$DARWIN_BINARY_FILENAME', 'lattice'
     bin.install 'lattice'
   end
 end
