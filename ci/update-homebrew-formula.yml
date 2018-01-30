@@ -1,0 +1,10 @@
+---
+platform: linux
+inputs:
+  - name: cli-homebrew-repo
+  - name: cli-metadata
+outputs:
+  - name: updated-homebrew-repo
+run:
+  path: ci/update-homebrew-formula.sh
+  dir: updated-homebrew-repo
