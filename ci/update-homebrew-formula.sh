@@ -30,7 +30,7 @@ EOF
 git config --local user.email concourse@mlab.com
 git config --local user.name concourse
 git add ./cli.rb
-git commit -m "Bump to $BINARY_TAG"
+git commit -m "Bump to version $BINARY_TAG"
 
 cp -a ./. ../updated-homebrew-repo
 
