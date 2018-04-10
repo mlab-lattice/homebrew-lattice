@@ -9,7 +9,7 @@ BINARY_TAG=$(cat ../cli-metadata/tag)
 DARWIN_BINARY_FILENAME=$(cat ../cli-metadata/darwin_filename)
 DARWIN_BINARY_SHASUM=$(cat ../cli-metadata/darwin_shasum)
 
-cat > ./cli.rb << EOF
+cat > ./lattice-cli.rb << EOF
 class Cli < Formula
   desc 'The lattice command line tool'
   homepage 'https://github.com/mlab-lattice/cli'
@@ -31,7 +31,7 @@ git config --local user.name concourse
 
 # if changes
 if [[ "$(git status --porcelain)" ]]; then
-  git add './cli.rb'
+  git add './lattice-cli.rb'
   git commit -m "Bump to version $BINARY_TAG"
 fi
 
