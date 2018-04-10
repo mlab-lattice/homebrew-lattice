@@ -1,14 +1,14 @@
 class Cli < Formula
   desc 'The lattice command line tool'
   homepage 'https://github.com/mlab-lattice/cli'
-  url 'https://s3-us-west-2.amazonaws.com/lattice-binaries/lattice_darwin_amd64_v0.1.11'
-  sha256 'd93d1855ad2115588b9d8a388afab3d982fc121d84e36ad3e50b1b19754431f4'
-  version '0.1.11'
+  url 'https://s3-us-west-2.amazonaws.com/lattice-binaries/lattice_darwin_amd64_v0.2.8'
+  sha256 'e01ee7085417fe6dc8c951f67c773d70cfbc9b132e55a368fb08780c61b12ca9'
+  version '0.2.8'
 
   bottle :unneeded
 
   def install
-    mv 'lattice_darwin_amd64_v0.1.11', 'lattice'
+    mv 'lattice_darwin_amd64_v0.2.8', 'lattice'
     bin.install 'lattice'
   end
 end
