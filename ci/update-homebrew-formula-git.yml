@@ -1,0 +1,14 @@
+---
+platform: linux
+image_resource:
+  type: docker-image
+  source:
+    repository: alpine/git
+inputs:
+  - name: cli-homebrew-staging-repo
+  - name: cli-metadata
+outputs:
+  - name: updated-homebrew-repo
+run:
+  path: ci/update-homebrew-formula-git.sh
+  dir: cli-homebrew-staging-repo
