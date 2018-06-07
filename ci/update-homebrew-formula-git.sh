@@ -13,7 +13,7 @@ cat > ./lattice-cli-git.rb << EOF
 class LatticeCliGit < Formula
   desc 'The lattice command line tool (HEAD release)'
   homepage 'https://github.com/mlab-lattice/cli'
-  url 'https://s3-us-west-2.amazonaws.com/lattice-staging-binaries/$DARWIN_BINARY_FILENAME'
+  url 'https://s3-us-east-2.amazonaws.com/lattice-staging-binaries/$DARWIN_BINARY_FILENAME'
   sha256 '$DARWIN_BINARY_SHASUM'
   version '$BINARY_TAG'
 
