@@ -8,7 +8,7 @@ class LatticeCliGit < Formula
   bottle :unneeded
 
   def install
-    mv 'lattice_darwin_amd64_v0.2.38-4-g714e506', 'lattice-git'
-    bin.install 'lattice-git'
+    mv 'lattice_darwin_amd64_v0.2.38-4-g714e506', 'lattice'
+    bin.install 'lattice'
   end
 end
