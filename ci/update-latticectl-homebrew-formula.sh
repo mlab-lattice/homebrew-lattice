@@ -9,7 +9,7 @@ BINARY_TAG=$(cat ../cli-metadata/tag)
 DARWIN_BINARY_FILENAME=$(cat ../cli-metadata/darwin_filename)
 DARWIN_BINARY_SHASUM=$(cat ../cli-metadata/darwin_shasum)
 
-cat > ./lattice-cli.rb << EOF
+cat > ./latticectl.rb << EOF
 class LatticeCli < Formula
   desc 'The latticectl command line tool'
   homepage 'https://github.com/mlab-lattice/lattice'
