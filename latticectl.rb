@@ -1,4 +1,4 @@
-class LatticeCtl < Formula
+class Latticectl < Formula
   desc 'The latticectl command line tool'
   homepage 'https://github.com/mlab-lattice/lattice'
   url 'https://s3-us-west-2.amazonaws.com/lattice-binaries/lattice_darwin_amd_v0652d73'
