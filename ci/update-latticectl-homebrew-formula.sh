@@ -10,7 +10,7 @@ DARWIN_BINARY_FILENAME=$(cat ../cli-metadata/darwin_filename)
 DARWIN_BINARY_SHASUM=$(cat ../cli-metadata/darwin_shasum)
 
 cat > ./latticectl.rb << EOF
-class LatticeCli < Formula
+class Latticectl < Formula
   desc 'The latticectl command line tool'
   homepage 'https://github.com/mlab-lattice/lattice'
   url 'https://s3-us-east-2.amazonaws.com/lattice-binaries-staging/$DARWIN_BINARY_FILENAME'
