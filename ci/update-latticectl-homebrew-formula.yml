@@ -10,5 +10,5 @@ inputs:
 outputs:
   - name: updated-homebrew-repo
 run:
-  path: ci/update-homebrew-formula.sh
+  path: ci/update-latticectl-homebrew-formula.sh
   dir: cli-homebrew-repo
