@@ -31,7 +31,7 @@ git config --local user.name concourse
 
 # if changes
 if [[ "$(git status --porcelain)" ]]; then
-  git add './lattice-cli.rb'
+  git add './latticectl.rb'
   git commit -m "Bump to version $BINARY_TAG"
 fi
 
