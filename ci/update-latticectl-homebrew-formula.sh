@@ -20,8 +20,8 @@ class Latticectl < Formula
   bottle :unneeded
 
   def install
-    mv '$DARWIN_BINARY_FILENAME', 'lattice'
-    bin.install 'lattice'
+    mv '$DARWIN_BINARY_FILENAME', 'latticectl'
+    bin.install 'latticectl'
   end
 end
 EOF
