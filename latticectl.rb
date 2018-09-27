@@ -8,7 +8,7 @@ class Latticectl < Formula
   bottle :unneeded
 
   def install
-    mv 'latticectl_darwin_amd64_v0.1.0-1-gc277682', 'lattice'
-    bin.install 'lattice'
+    mv 'latticectl_darwin_amd64_v0.1.0-1-gc277682', 'latticectl'
+    bin.install 'latticectl'
   end
 end
